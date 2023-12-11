@@ -1,0 +1,40 @@
+.form {
+	width: 750px;
+	max-height: 80vh;
+	overflow-y: auto;
+	padding: 30px;
+	scrollbar-width: thin;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	overflow-y: auto;
+}
+
+.scorecardField {
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	column-gap: 15px;
+	width: 100%;
+	border-bottom: 1px solid rgba(163, 166, 168, 0.4);
+}
+
+.addButton {
+	outline: 0;
+	border: 0;
+	padding: 10px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.textarea {
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+}
+
+.title {
+	text-align: center;
+}

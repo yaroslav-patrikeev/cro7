@@ -1,0 +1,28 @@
+@import 'src/styles/variables';
+
+.info {
+	box-shadow: 5px 5px 8px 0px rgba(163, 166, 168, 0.4);
+	background-color: $card-background;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+	width: 90%;
+}
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.userImage {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: url(../../../images/male-user.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 20px;
+}

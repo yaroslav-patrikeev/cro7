@@ -1,0 +1,16 @@
+@import 'src/styles/variables';
+
+.button {
+	width: 100%;
+	padding: 15px;
+	cursor: pointer;
+	background-color: $interactive-color;
+	outline: 0;
+	border: 0;
+	color: white;
+	border-radius: 10px;
+	font-size: 18px;
+	&:hover {
+		opacity: 0.7;
+	}
+}

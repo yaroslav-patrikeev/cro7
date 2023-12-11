@@ -1,0 +1,72 @@
+@import 'src/styles/variables';
+
+.wrapper {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+.info {
+	height: 100%;
+	width: 470px;
+	text-align: center;
+	h2 {
+		margin-bottom: 30px;
+	}
+	p {
+		text-align: left;
+		font-size: 17px;
+	}
+}
+
+.calendar {
+	width: 500px;
+	box-shadow: 5px 5px 8px 0px rgba(163, 166, 168, 0.4);
+	background-color: $card-background;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px 30px;
+}
+
+.header {
+	display: flex;
+	width: 460px;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.month {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.days {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	margin-bottom: 25px;
+	gap: 15px;
+}
+
+.day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.numbers {
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(7, 1fr);
+	width: 100%;
+	gap: 15px;
+}
+
+.arrow {
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}

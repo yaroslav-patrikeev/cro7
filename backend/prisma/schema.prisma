@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lunch {
+  id       String   @id @default(uuid())
+  createAt DateTime @default(now()) @map("create_at")
+  updateAt DateTime @updatedAt @map("update_at")
+
+  users User[]
+  date  DateTime
+}
+
+model User {
+  id       String   @id @default(uuid())
+  createAt DateTime @default(now()) @map("create_at")
+  updateAt DateTime @updatedAt @map("update_at")
+
+  email      String      @unique
+  password   String
+  name       String
+  positions  String[]
+  accesses   String[]
+  lunches    Lunch[]
+  scoreCards ScoreCard[]
+  soviet     Boolean     @default(false)
+}
+
+model ScoreCardPattern {
+  id       String   @id @default(uuid())
+  createAt DateTime @default(now()) @map("create_at")
+  updateAt DateTime @updatedAt @map("update_at")
+
+  name      String
+  positions String[]
+  fields    Json
+}
+
+model ScoreCard {
+  id       String   @id @default(uuid())
+  createAt DateTime @default(now()) @map("create_at")
+  updateAt DateTime @updatedAt @map("update_at")
+
+  employeeScore       Int[]
+  councilScore        Int[]
+  administrationScore Int[]
+  comment             String[]
+  user                User     @relation(fields: [userId], references: [id])
+  userId              String   @map("user_id")
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Lunch" ALTER COLUMN "date" SET DATA TYPE DATE;

@@ -1,0 +1,88 @@
+@import 'src/styles/variables';
+
+.register {
+	box-shadow: 5px 5px 8px 0px rgba(163, 166, 168, 0.4);
+	background-color: $card-background;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 40px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: 30px;
+}
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 35px;
+}
+
+.title {
+	margin: 0;
+}
+
+.moduleInputs {
+	display: flex;
+	column-gap: 20px;
+	position: relative;
+	width: 100%;
+	padding: 10px;
+}
+
+.addButton {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 17px;
+	right: -13px;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.textInput {
+	box-sizing: border-box;
+	padding: 10px;
+	outline: 0;
+	border: 0;
+	font-size: 18px;
+	border-bottom: 1px solid darken($background-color, 10%);
+	width: 100%;
+}
+
+.sex {
+	display: flex;
+	column-gap: 20px;
+	justify-content: center;
+	width: 100%;
+}
+
+.accesses {
+	padding: 10px;
+	font-size: 18px;
+	outline: 0;
+	border: 0;
+	background-color: $card-background;
+	width: 100%;
+}
+
+.test::hover {
+	background-color: transparent;
+}
+
+.submitButton {
+	width: 100%;
+	margin-top: 15px;
+	padding: 15px;
+	cursor: pointer;
+	background-color: $interactive-color;
+	outline: 0;
+	border: 0;
+	color: white;
+	border-radius: 10px;
+	font-size: 18px;
+}

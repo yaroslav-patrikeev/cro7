@@ -1,0 +1,38 @@
+@import 'src/styles/variables';
+
+.number {
+	display: flex;
+	border: 0;
+	outline: 0;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: transparent;
+	transition: background-color 0.3s ease-in;
+}
+
+.number_current {
+	font-weight: 600;
+}
+
+.number:hover {
+	background-color: $background-color;
+}
+
+.number_active {
+	background-color: $interactive-color;
+
+	color: white;
+}
+
+.number_active:hover {
+	background-color: darken($interactive-color, 5%);
+}
+
+.number_disabled {
+	filter: grayscale(100%);
+	cursor: default;
+	pointer-events: none;
+}

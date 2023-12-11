@@ -1,0 +1,11 @@
+@import 'src/styles/variables';
+
+.field {
+	box-sizing: border-box;
+	padding: 10px;
+	outline: 0;
+	border: 0;
+	font-size: 18px;
+	border-bottom: 1px solid darken($background-color, 10%);
+	width: 100%;
+}

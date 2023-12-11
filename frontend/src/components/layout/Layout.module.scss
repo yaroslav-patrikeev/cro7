@@ -1,0 +1,16 @@
+@import 'src/styles/variables';
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.content {
+	width: 1200px;
+	min-height: 600px;
+	background-color: $background-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+}
