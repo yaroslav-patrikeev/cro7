@@ -93,7 +93,3 @@ curl http://localhost:3000/api/create-super
 ### Backend
 
 - Express, PostgreSQL, Prisma
-
-```
-
-```
