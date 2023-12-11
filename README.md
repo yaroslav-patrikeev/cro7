@@ -72,7 +72,7 @@ yarn dev
 
 - Сделать get-запрос по url
 
-````bash
+```bash
 curl http://localhost:3000/api/create-super
 ```
 
@@ -81,7 +81,7 @@ curl http://localhost:3000/api/create-super
 ```
 логин: admin@admin.ru
 пароль: 123456Aa!
-````
+```
 
 ## Стэк технологий
 
